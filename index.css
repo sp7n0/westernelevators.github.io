@@ -70,6 +70,7 @@ nav img {
 /* main */
 
 .main-page {
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
