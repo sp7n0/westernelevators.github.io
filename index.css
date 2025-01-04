@@ -24,9 +24,9 @@ nav {
     padding: 10px;
 }
 
-nav img {
+#logo img {
     width: 100px;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 #navbar {
@@ -111,7 +111,7 @@ footer {
 
 @media (max-width: 768px) {
     :root {
-        --navbar-height: 190px;
+        --navbar-height: 150px;
     }
     body {
         margin-left: 0px;
@@ -136,11 +136,9 @@ footer {
     #links ul {
         flex-wrap: wrap;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 5px;
+        gap: 10px;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
         padding: 0;
     }
 
@@ -152,4 +150,5 @@ footer {
         margin: 0;
         padding: 0;
     }
+    
 }
