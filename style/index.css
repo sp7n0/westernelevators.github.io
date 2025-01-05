@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #044392;
+    --secondary-color: #f0f0f0;
+    --accent-color: #3c93fc;
+    --hover-color: #ff0000;
+    --background-color: #fafcfe;
+}
+
+body {
+    margin: 0;
+    margin-left: 20%;
+    padding: 0;
+    font-family: Montserrat, Bitter, serif, sans-serif;
+    font-size: large;
+}
+
+/* navigation bar */
+nav {
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+#logo img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0%;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+#links ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#links ul li a {
+    font-size: small;
+    text-decoration: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+#links ul li a:hover {
+    color: var(--hover-color);
+}
+/* main */
+hr {
+    margin-left: -20px;
+}
+
+
+.main-page {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: black;
+}
+
+.about-us {
+    color: black;
+}
+
+.about-us ul li {
+    list-style: square;
+}
+
+.our-goals {
+    color: var(--accent-color);
+}
+
+.goal-image {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.goal-image img {
+    width: 170px;
+}
+
+.our-goals h1{
+    display: flex;
+    justify-content: center;
+}
+
+.our-vision {
+    color: black;
+}
+
+p {
+    padding-left: 20px;
+}
+
+.vision-image {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.vision-image img {
+    width: 170px;
+}
+
+.our-vision h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.our-vision span {
+    font-weight: bold;
+    color: #1155cc;
+}
+
+.our-vision #sky {
+    color: red;
+}
+
+.our-message {
+    padding-left: 20px;
+    color: var(--hover-color);
+}
+
+.message-image {
+    display: flex;
+    justify-content: center;
+}
+
+.message-image img {
+    width: 170px;
+}
+
+.our-message h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#footer-bg img {
+    width: 100px;
+}
+
+#footer-bg {
+    padding: 0;
+    margin: 0;
+    color: #1155cc;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center; 
+    background-image: url(https://i.ibb.co/tYByWKL/sky.jpg);
+}
+
+#footer-bg span {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --navbar-height: 150px;
+    }
+    body {
+        margin-left: 0px;
+        padding-top: calc(var(--navbar-height) + 20px);
+        font-size: small;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;    
+        height: var(--navbar-height);
+        top: 0;
+    }
+
+    #navbar, #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #links ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #logo {
+        padding: 0;
+    }
+
+    #links ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    hr {
+        margin-left: 0px;
+    }
+    
+    .main-page {
+        padding-left: 0px;
+    }
+    
+    .about-us {
+        padding-left: 0px;
+    }
+
+    .our-goals img {
+        padding-left: 0px;
+    }
+
+}
