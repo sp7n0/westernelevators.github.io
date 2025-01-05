@@ -161,6 +161,24 @@ p {
     justify-content: center;
 }
 
+.certification {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification img {
+    width: 550px;
+}
+
+.certification-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* footer */
 footer {
     display: flex;
@@ -247,6 +265,10 @@ footer {
 
     .our-goals img {
         padding-left: 0px;
+    }
+
+    .certification img {
+        width: 350px;
     }
 
 }
