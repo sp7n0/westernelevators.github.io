@@ -1,0 +1,39 @@
+.passengerWelcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+#passengerWelcomeText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.passengerWelcome img {
+    width: 200px;
+}
+
+.passengerBlueprints {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.passengerBlueprints img, #blueprintsItems img {
+    width: 100%;
+}
+
+#blueprintsItems {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
