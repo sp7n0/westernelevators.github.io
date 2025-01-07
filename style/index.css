@@ -143,7 +143,6 @@ p {
 }
 
 .our-message {
-    padding-left: 20px;
     color: var(--hover-color);
 }
 
@@ -207,6 +206,17 @@ footer {
 
 #footer-bg span {
     color: red;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
