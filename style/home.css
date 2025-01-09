@@ -1,0 +1,8 @@
+.Welcome img {
+    width: 45%;
+}
+
+#WelcomeImg {
+    display: flex;
+    flex-direction: row;
+}

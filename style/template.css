@@ -1,0 +1,67 @@
+.Welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+#WelcomeText {
+    text-align: center;
+}
+
+.Welcome img {
+    width: 200px;
+}
+
+.passengerBlueprints {
+    display: flex;
+    flex-direction: row;
+}
+
+.passengerBlueprints img{
+    width: 100%;
+}
+
+#blueprints {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+#blueprintsItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+#blueprintsItems img {
+    width: 100%;
+}
+
+.productSpecifications {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productSpecifications img {
+    width: 100%;
+}
+
+#productSpecificationsText {
+    background-color: #f0f0f0;
+}
+
+#productSpecificationsImg {
+    padding: 10px;
+}
+
+#productSpecificationsImg h2 {
+    color: red;
+}
