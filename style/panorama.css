@@ -1,51 +1,10 @@
-.panoramaWelcome {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#panoramaWelcomeText {
-    text-align: center;
-}
-
-#panoramaWelcomeImg {
-    display: flex;
-}
-
-.panoramaWelcome img {
-    width: 35%;
-}
-
-.productSpecifications {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-#productSpecificationsImg {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-#productSpecificationsText {
-    font-size: small;
-    background-color: #f0f0f0;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 #productSpecificationsText p, h2 {
     font-size: medium;
+}
+
+@media (max-width: 768px) {
+    .panoramaWelcome {
+        display: flex;
+        flex-direction: column;
+    }
 }

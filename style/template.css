@@ -7,12 +7,18 @@
     gap: 10px;
 }
 
+.Welcome img {
+    width: 200px;
+}
+
 #WelcomeText {
     text-align: center;
 }
 
-.Welcome img {
-    width: 200px;
+#WelcomeImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .passengerBlueprints {
@@ -55,7 +61,7 @@
 }
 
 #productSpecificationsText {
-    background-color: #f0f0f0;
+    background-color: var(--secondary-color);
 }
 
 #productSpecificationsImg {
@@ -64,4 +70,11 @@
 
 #productSpecificationsImg h2 {
     color: red;
+}
+
+@media (max-width: 768px) {
+    .Welcome {
+        display: flex;
+        flex-direction: column;
+    }
 }

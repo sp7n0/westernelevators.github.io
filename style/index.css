@@ -2,7 +2,7 @@
     --primary-color: #044392;
     --secondary-color: #f0f0f0;
     --accent-color: #3c93fc;
-    --hover-color: #ff0000;
+    --error-color: #ff0000;
     --background-color: #fafcfe;
 }
 
@@ -12,6 +12,11 @@ body {
     padding: 0;
     font-family: Montserrat, Bitter, serif, sans-serif;
     font-size: large;
+}
+
+a:hover {
+    transition: filter 0.3s ease-in-out;
+    filter: drop-shadow(0 0 5px white);
 }
 
 /* navigation bar */
@@ -60,13 +65,9 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: white;
-    transition: color 0.3s ease-in-out;
+    color: var(--secondary-color);
 }
 
-#links ul li a:hover {
-    color: var(--hover-color);
-}
 /* main */
 hr {
     margin-left: -20px;
@@ -79,7 +80,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--);
     color: black;
 }
 
@@ -105,7 +106,7 @@ hr {
     width: 170px;
 }
 
-.our-goals h1{
+.our-goals h1 {
     display: flex;
     justify-content: center;
 }
@@ -143,7 +144,7 @@ p {
 }
 
 .our-message {
-    color: var(--hover-color);
+    color: red
 }
 
 .message-image {
@@ -200,7 +201,7 @@ footer {
     width: 100%;
     text-align: center;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-image: url(https://i.ibb.co/tYByWKL/sky.jpg);
 }
 
@@ -217,13 +218,14 @@ footer {
 }
 
 .contact a {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
     :root {
         --navbar-height: 150px;
     }
+
     body {
         margin-left: 0px;
         padding-top: calc(var(--navbar-height) + 20px);
@@ -232,12 +234,13 @@ footer {
 
     nav {
         position: fixed;
-        width: 100%;    
+        width: 100%;
         height: var(--navbar-height);
         top: 0;
     }
 
-    #navbar, #links {
+    #navbar,
+    #links {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -265,11 +268,11 @@ footer {
     hr {
         margin-left: 0px;
     }
-    
+
     .main-page {
         padding-left: 0px;
     }
-    
+
     .about-us {
         padding-left: 0px;
     }
