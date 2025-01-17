@@ -1,7 +1,3 @@
-#productSpecificationsText p, h2 {
-    font-size: medium;
-}
-
 @media (max-width: 768px) {
     .panoramaWelcome {
         display: flex;

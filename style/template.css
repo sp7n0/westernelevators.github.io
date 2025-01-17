@@ -8,7 +8,8 @@
 }
 
 .Welcome img {
-    width: 200px;
+    width: auto;
+    height: 200px;
 }
 
 #WelcomeText {
@@ -19,6 +20,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .passengerBlueprints {
@@ -58,6 +61,10 @@
 
 .productSpecifications img {
     width: 100%;
+}
+
+#productSpecificationsText p, h2 {
+    font-size: medium;
 }
 
 #productSpecificationsText {
